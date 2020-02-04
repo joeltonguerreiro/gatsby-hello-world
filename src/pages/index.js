@@ -1,3 +1,21 @@
 import React from "react"
 
-export default () => <div>Hello world!</div>
+
+import Layout from "../components/layout"
+import Header from "../components/header"
+import Talents from "../components/talents"
+import Portfolio from "../components/portfolio"
+import Plans from "../components/plans"
+import Footer from "../components/footer"
+
+export default () => 
+<Layout>
+    <Header></Header>
+
+    <Talents></Talents>
+    <Portfolio></Portfolio>
+    <Plans></Plans>
+
+    <Footer></Footer>
+    
+</Layout>
