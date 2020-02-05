@@ -7,7 +7,7 @@ const WrapperClients = styled.div`
     height: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-column-gap: 10px; 
+    grid-column-gap: 10px;
 
 `
 
@@ -15,8 +15,7 @@ const WrapperClients = styled.div`
 const Client = styled.div`
     width: 100%;
     height: 100%;
-    background-color: #fff;
-    border: 1px solid #ccc;
+    background-color: #fafafa;
     
     &:hover {
         cursor: pointer;
