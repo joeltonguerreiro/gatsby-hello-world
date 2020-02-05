@@ -6,16 +6,16 @@ const WrapperClients = styled.div`
     width: 100%;
     height: 100%;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-column-gap: 10px;
+    grid-template-rows: 200px 200px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
 
 `
-
 
 const Client = styled.div`
     width: 100%;
     height: 100%;
-    background-color: #fafafa;
+    background-color: #f8f8f8;
     
     &:hover {
         cursor: pointer;
@@ -25,6 +25,11 @@ const Client = styled.div`
 
 export default () => (
     <WrapperClients>
+        <Client></Client>
+        <Client></Client>
+        <Client></Client>
+        <Client></Client>
+        <Client></Client>
         <Client></Client>
         <Client></Client>
         <Client></Client>

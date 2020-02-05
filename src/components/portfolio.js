@@ -4,7 +4,7 @@ import styled from "styled-components"
 import Clients from "./clients"
 
 const Portfolio = styled.div`
-    height: 300px;
+    height: auto;
     width: 100%;
     background-color: #f2add1;
 ` 
