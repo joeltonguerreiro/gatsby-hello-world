@@ -1,12 +1,16 @@
 import React from "react"
 import styled from "styled-components"
 
+import {LayoutContainer, defaultColors} from "./layout"
+
 const Talents = styled.div`
-    height: 300px;
+    height: 400px;
     width: 100%;
-    background-color: #e3f1d2;
+    background-color: ${defaultColors.secondaryColor};
 ` 
 
 export default () => (
-    <Talents></Talents>
+    <LayoutContainer>
+        <Talents id="talents"></Talents>
+    </LayoutContainer>
 )

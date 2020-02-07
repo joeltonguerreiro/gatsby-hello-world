@@ -6,7 +6,6 @@ import Clients from "./clients"
 const Portfolio = styled.div`
     height: auto;
     width: 100%;
-    background-color: #f2add1;
 ` 
 
 export default () => (

@@ -11,7 +11,7 @@ const WrapperContact = styled.div`
 ` 
 
 export default () => (
-    <WrapperContact>
+    <WrapperContact id="contact">
         <input type="text"></input>
         <textarea rows="4" cols="50">
 

@@ -1,6 +1,6 @@
 import React from "react"
 
-import Layout from "../components/layout"
+import Layout, {Section, defaultColors} from "../components/layout"
 import Header from "../components/header"
 import Talents from "../components/talents"
 import Portfolio from "../components/portfolio"
@@ -12,10 +12,23 @@ export default () =>
 <Layout>
     <Header></Header>
 
+    <Section backgroundColor={defaultColors.backgroundPrimaryColor}>
     <Talents></Talents>
-    <Portfolio></Portfolio>
-    <Plans></Plans>
-    <Contact></Contact>
+    </Section>
+    
+    <Section>
+        <Portfolio></Portfolio>
+    </Section>
+    
+    
+    <Section backgroundColor={defaultColors.backgroundPrimaryColor}>
+        <Plans></Plans>
+    </Section>
+
+
+    <Section>
+        <Contact></Contact>
+    </Section>
 
     <Footer></Footer>
     
