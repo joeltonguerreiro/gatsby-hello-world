@@ -30,8 +30,8 @@ export default () => {
         <Menu>
             <MenuContent sideMenuIsOpen={sideMenuIsOpen}>
                 <MenuItem href="#talents">Talentos</MenuItem>
-                <MenuItem>Portifólio</MenuItem>
-                <MenuItem>Planos</MenuItem>
+                <MenuItem href="#clients">Clientes</MenuItem>
+                <MenuItem href="#plans">Planos</MenuItem>
                 <MenuItem href="#contact">Contato</MenuItem>
             </MenuContent>
 
@@ -47,7 +47,7 @@ export default () => {
 
             <SideMenuContent sideMenuIsOpen={sideMenuIsOpen}>
                 <MenuItem>Talentos</MenuItem>
-                <MenuItem>Portifólio</MenuItem>
+                <MenuItem>Clientes</MenuItem>
                 <MenuItem>Planos</MenuItem>
                 <MenuItem>Contato</MenuItem>
             </SideMenuContent>

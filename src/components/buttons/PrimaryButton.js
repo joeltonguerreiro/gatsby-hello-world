@@ -3,7 +3,7 @@ import styled from "styled-components"
 
 import {defaultColors} from "../layout"
 
-const ViewMore = styled.button`
+const PrimaryButton = styled.button`
     width: 120px;
     height: 40px;
     padding: 10px;
@@ -18,8 +18,8 @@ const ViewMore = styled.button`
     }
 ` 
 
-export default () => (
-    <ViewMore>
-        Ver Mais
-    </ViewMore>
+export default ({children}) => (
+    <PrimaryButton>
+        {children}
+    </PrimaryButton>
 )

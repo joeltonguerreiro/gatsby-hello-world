@@ -19,12 +19,17 @@ const WrapperHeader = styled.div`
 
 const Header = styled.div`
     width: 1233px;
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 50px auto;
     align-items: center;
+
+    @media screen and (max-width: 920px) {
+        display: flex;
+        justify-content: center;
+    }
 `
 
-const Logo = styled.div`
+const Logo = styled.a`
     height: 50px;
     width: 50px;
     background-color: #d41a8c;
@@ -34,8 +39,7 @@ export default () => {
 
     return <WrapperHeader>
         <Header>
-            <Logo>
-            </Logo>
+            <Logo as={Link} to={"/"}></Logo>
             <Menu></Menu>
         </Header>
     </WrapperHeader>

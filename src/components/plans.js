@@ -13,7 +13,7 @@ const Plans = styled.div`
 
 export default () => (
     <LayoutContainer>
-        <Plans></Plans>
+        <Plans id="plans"></Plans>
     </LayoutContainer>
     
 )

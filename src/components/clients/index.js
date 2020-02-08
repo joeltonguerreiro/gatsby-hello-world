@@ -3,13 +3,13 @@ import styled from "styled-components"
 import {LayoutContainer, defaultColors} from "../layout"
 
 import Client from "./client"
-import ViewMore from "../buttons/ViewMore"
+import PrimaryButton from "../buttons/PrimaryButton"
 
 import {WrapperClients, WrapperViewMore} from "./styles"
 
 export default () => (
     <LayoutContainer>
-        <WrapperClients>
+        <WrapperClients id="clients">
             <Client></Client>
             <Client></Client>
             <Client></Client>
@@ -21,7 +21,7 @@ export default () => (
         </WrapperClients>
         
         <WrapperViewMore>
-            <ViewMore></ViewMore>
+            <PrimaryButton>Ver mais</PrimaryButton>
         </WrapperViewMore>
     
     </LayoutContainer>
