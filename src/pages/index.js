@@ -3,7 +3,7 @@ import React from "react"
 import Layout, {Section, defaultColors} from "../components/layout"
 import Header from "../components/header"
 import Talents from "../components/talents"
-import Portfolio from "../components/portfolio"
+import Clients from "../components/clients"
 import Plans from "../components/plans"
 import Contact from "../components/contact"
 import Footer from "../components/footer"
@@ -17,7 +17,7 @@ export default () =>
     </Section>
     
     <Section>
-        <Portfolio></Portfolio>
+        <Clients></Clients>
     </Section>
     
     

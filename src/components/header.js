@@ -30,10 +30,7 @@ const Logo = styled.div`
     background-color: #d41a8c;
 `
 
-
 export default () => {
-
-    
 
     return <WrapperHeader>
         <Header>

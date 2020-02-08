@@ -1,6 +1,6 @@
 const primaryColor = '#5570ff'
 
-const secondaryColor = '#a7b5fd';
+const secondaryColor = '#aea7fd';
 
 const backgroundPrimaryColor = '#eaeaea';
 

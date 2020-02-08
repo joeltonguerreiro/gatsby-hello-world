@@ -10,6 +10,9 @@ const Layout = styled.div`
 const Container = styled.div`
     max-width: 1233px;
     margin: 0 auto; 
+    @media screen and (max-width: 1240px) {
+        margin: 0 15px;
+    }
 `
 
 export const Section = styled.section`
