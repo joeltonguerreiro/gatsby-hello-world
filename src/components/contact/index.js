@@ -10,10 +10,12 @@ import PrimaryButton from "../buttons/PrimaryButton"
 import whatsappLogo from "../../assets/whatsappLogo.svg"
 
 const WrapperContact = styled.div`
-    position: relative;
+    //position: relative;
     width: 100%;
     display: flex;
     justify-content: center;
+    flex-direction: column;
+
 ` 
 
 const FormContact = styled.form`
@@ -24,10 +26,19 @@ const FormContact = styled.form`
 
 `
 
+const WrapperWhatsapplogo = styled.div`
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 15px;
+
+    @media screen and (max-width: 767px) {
+        justify-content: center;
+    }
+`
+
 const StyledWhatsappLogo = styled.a`
-    position: absolute;
-    right: 0;
-    bottom: 0;
+    display: block;
     width: 50px;
     height: 50px;
 
@@ -37,7 +48,8 @@ const StyledWhatsappLogo = styled.a`
     }
 
     img {
-        width: 100%
+        width: 50px;
+        height: auto;
     }
     
 `
@@ -61,16 +73,19 @@ export default () => (
 
                 <PrimaryButton>Enviar</PrimaryButton>
 
-
             </FormContact>
+            <WrapperWhatsapplogo>
+                <StyledWhatsappLogo href="https://wa.me/5543999318375"
+                    target="_blank"
+                    title="Abrir chat do whatsapp">
+                    <img src={whatsappLogo}></img>
+                </StyledWhatsappLogo>
+            </WrapperWhatsapplogo>
             
-            <StyledWhatsappLogo href="https://wa.me/5543999318375"
-                target="_blank"
-                title="Abrir chat do whatsapp">
-                <img src={whatsappLogo}></img>
-            </StyledWhatsappLogo>
             
         </WrapperContact>
+
+        
     </LayoutContainer>
     
 )
