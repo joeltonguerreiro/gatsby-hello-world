@@ -11,7 +11,6 @@ export const StyledInput = styled.input`
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
 
-
 `
 
 export const StyledTextArea = styled.textarea`
@@ -22,8 +21,8 @@ export const StyledTextArea = styled.textarea`
     margin-bottom: 10px;
     padding: 10px;
 
-    @media screen and (max-width: 420px) {
-        width: 300px;
+    @media screen and (max-width: 767px) {
+        width: 100%;
     }
 
 `

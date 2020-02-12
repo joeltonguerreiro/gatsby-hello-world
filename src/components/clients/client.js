@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from "react"
 import styled from "styled-components"
-import Modal from "react-modal"
 
 import { LayoutContainer, defaultColors } from "../layout"
+
+import ModalClient from "./modalClient"
 
 const Client = styled.div`
     width: 100%;
@@ -19,21 +20,6 @@ const Client = styled.div`
     }
 
 `
-
-const customStyles = {
-    content: {
-        top: '50%',
-        left: '50%',
-        right: 'auto',
-        bottom: 'auto',
-        marginRight: '-50%',
-        transform: 'translate(-50%, -50%)'
-    },
-};
-
-Modal.setAppElement('#___gatsby');
-
-
 export default () => {
 
     const [modalIsOpen, setModalIsOpen] = useState(false);
@@ -42,27 +28,13 @@ export default () => {
         setModalIsOpen(true);
     }
 
-    const afterOpenModal = () => {
-
-    }
-
-    const closeModal = () => {
-        setModalIsOpen(false);
-    }
-
     return <>
         <Client onClick={handleOpenModal}>
 
         </Client>
-        <Modal
-            isOpen={modalIsOpen}
-            onAfterOpen={afterOpenModal}
-            onRequestClose={closeModal}
-            closeTimeoutMS={200}
-            style={customStyles}
-            contentLabel="Example Modal"
-        >
-            teste modal
-        </Modal>
+
+        <ModalClient isOpen={modalIsOpen}>
+            sfasdfasfd
+        </ModalClient>
     </>
 }

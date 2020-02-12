@@ -86,11 +86,11 @@ export const ButtonToggleSideMenu = styled.a`
         width: 30px;
         height: 2px;
         background-color: white;
-        transition: transform 0.5s ease;
+        transition: transform 0.5s ease, display 0.5s ease;
     }
 
     span:nth-child(1) {
-        transform: ${props => props.sideMenuIsOpen ? `rotate(45deg)` : ``}
+        transform: ${props => props.sideMenuIsOpen ? `rotate(45deg) translateY(1px)` : ``}
         
     }
 
@@ -99,7 +99,7 @@ export const ButtonToggleSideMenu = styled.a`
     }
 
     span:nth-child(3) {
-        transform: ${props => props.sideMenuIsOpen ? `rotate(-45deg)` : ``}
+        transform: ${props => props.sideMenuIsOpen ? `rotate(-45deg) translateY(-1px)` : ``}
 
     }
     
