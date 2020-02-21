@@ -14,27 +14,40 @@ const WrapperPlans = styled.div`
 
 `
 
+const StyledShade = styled.div`
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0);
+    transition: background-color 0.5s ease;
+    &:hover {
+        background-color: rgba(0,0,0,0.2);
+    }
+`
+
 const StyledPlan = styled.div`
     width: 100%;
     height: 100%;
     background-image: url('https://via.placeholder.com/200x200.png?text=plano');
     background-repeat: none;
-    backogrund-position: center;
+    background-position: center;
     background-size: cover;
-    transition: opacity 0.5s;
-    opacity: 0.5;
     &:hover {
         cursor: pointer;
-        opacity: 1;
     }
 `
 
 export default () => (
     <LayoutContainer>
         <WrapperPlans id="plans">
-            <StyledPlan></StyledPlan>
-            <StyledPlan></StyledPlan>
-            <StyledPlan></StyledPlan>
+            <StyledPlan>
+                <StyledShade></StyledShade>
+            </StyledPlan>
+            <StyledPlan>
+                <StyledShade></StyledShade>
+            </StyledPlan>
+            <StyledPlan>
+                <StyledShade></StyledShade>
+            </StyledPlan>
 
         </WrapperPlans>
     </LayoutContainer>

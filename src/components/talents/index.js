@@ -4,7 +4,7 @@ import styled from "styled-components"
 import {LayoutContainer, defaultColors} from "../layout"
 
 const Talents = styled.div`
-    height: 600px;
+    height: 400px;
     width: 100%;
     background-color: ${defaultColors.secondaryColor};
 ` 

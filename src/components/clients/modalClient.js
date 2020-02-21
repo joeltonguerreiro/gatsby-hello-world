@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react"
 import styled from "styled-components"
 import Modal from "react-modal"
 
+import { LayoutContainer, defaultColors } from "../layout"
+
 const customStyles = {
     content: {
         top: '50%',
@@ -12,6 +14,14 @@ const customStyles = {
         transform: 'translate(-50%, -50%)'
     },
 };
+
+const StyledModalContent = styled.div`
+    width: 600px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+`
 
 Modal.setAppElement('#___gatsby');
 
@@ -25,7 +35,12 @@ export default (props) => {
         style={customStyles}
         contentLabel="Example Modal"
     >
-        {props.children}
+        <StyledModalContent>
+            <img src='https://via.placeholder.com/600x400.png?text=clientes' width={'100%'} height={'100%'} >
+
+            </img>
+        </StyledModalContent>
+        
     </Modal>
     
 }

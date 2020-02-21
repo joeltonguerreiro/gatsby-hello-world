@@ -67,6 +67,10 @@ export default () => (
 
                 </StyledInput>
 
+                <StyledInput type="text" placeholder={"Digite seu celular"}>
+
+                </StyledInput>
+
                 <StyledTextArea rows="6" cols="100" placeholder={"Digite sua mensagem"}>
 
                 </StyledTextArea>

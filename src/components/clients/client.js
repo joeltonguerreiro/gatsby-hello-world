@@ -5,18 +5,25 @@ import { LayoutContainer, defaultColors } from "../layout"
 
 import ModalClient from "./modalClient"
 
+const StyledShade = styled.div`
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0);
+    transition: background-color 0.5s ease;
+    &:hover {
+        background-color: rgba(0,0,0,0.2);
+    }
+`
+
 const Client = styled.div`
     width: 100%;
     height: 100%;
     background-image: url('https://via.placeholder.com/200x200.png?text=clientes');
     background-repeat: none;
-    backogrund-position: center;
+    background-position: center;
     background-size: cover;
-    transition: opacity 0.5s;
-    opacity: 0.5;
     &:hover {
         cursor: pointer;
-        opacity: 1;
     }
 
     @media screen and (max-width: 360px) {
@@ -42,7 +49,7 @@ export default () => {
 
     return <>
         <Client onClick={handleOpenModal}>
-            
+            <StyledShade></StyledShade>
         </Client>
 
         <ModalClient 
