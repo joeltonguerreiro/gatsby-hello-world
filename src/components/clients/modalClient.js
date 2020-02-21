@@ -17,26 +17,10 @@ Modal.setAppElement('#___gatsby');
 
 export default (props) => {
 
-    const [modalIsOpen, setModalIsOpen] = useState(false);
-
-    useEffect(() => {
-
-        setModalIsOpen(props.isOpen);
-
-    }, [props.isOpen])
-    
-    const afterOpenModal = () => {
-
-    }
-
-    const closeModal = () => {
-        setModalIsOpen(false);
-    }
-
     return <Modal
-        isOpen={modalIsOpen}
-        onAfterOpen={afterOpenModal}
-        onRequestClose={closeModal}
+        isOpen={props.modalIsOpen}
+        onAfterOpen={props.afterOpenModal}
+        onRequestClose={props.closeModal}
         closeTimeoutMS={200}
         style={customStyles}
         contentLabel="Example Modal"
@@ -44,5 +28,4 @@ export default (props) => {
         {props.children}
     </Modal>
     
-
 }
