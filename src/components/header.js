@@ -12,7 +12,7 @@ const WrapperHeader = styled.div`
     display: flex;
     justify-content: center;
     background-color: ${defaultColors.secondaryColor};
-    height: 80px;
+    height: 90px;
     position: fixed;
     top: 0;
 `
